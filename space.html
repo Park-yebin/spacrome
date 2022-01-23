@@ -8,6 +8,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="welcome-zone">
+        <form class="hidden" id="login">
+            <input required maxlength="12" minlength="1" type="text" placeholder="Would you tell your name?">
+            <button>V</button>
+        </form>
+        <div class="hidden" id="announce"></div>
+    </div>
     <div class="time-zone">
         <h1 id="clock"></h1>
         <div id="date"></div>
@@ -26,7 +33,7 @@
         <span></span>
         <span></span>
     </div>
-    <!-- V시계, V투두, V날씨, V위치, V랜덤 배경, 로그인, V랜덤 명언 -->
+    <script src="js/welcome.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/quote.js"></script>
     <script src="js/screen.js"></script>
