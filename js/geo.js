@@ -6,10 +6,15 @@ function allowed(position){
     const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`;
 
     fetch(url).then(response => response.json()).then(data => {
-        const city = document.querySelector(".geo-zone span:first-child")
-        const weather = document.querySelector(".geo-zone span:last-child")
-        city.innerText ="Your location: " + data.name + "\n";
-        weather.innerText = `${data.weather[0].main} ${data.main.temp}C`;
+        const city = geo.querySelector("span:first-child")
+        const weather = geo.querySelector("span:nth-child(2)");
+        const temp = geo.querySelector("span:last-child");
+        city.setAttribute("class", "fab fa-font-awesome-flag");
+        city.innerText = " " +data.name + "\n";
+        weather.setAttribute("class", "fas fa-cloud");
+        weather.innerText = ` ${data.weather[0].main}`;
+        temp.setAttribute("class", "fas fa-thermometer-half");
+        temp.innerText = ` ${data.main.temp}C`;
         });
 }
 

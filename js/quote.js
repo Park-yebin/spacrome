@@ -15,4 +15,4 @@ const person = document.querySelector("#person");
 const chosenQuote = quotes[Math.floor(Math.random()*quotes.length)];
 
 words.innerText = chosenQuote.quote;
-person.innerText = chosenQuote.author;
+person.innerText = "- "+chosenQuote.author+" -";

@@ -22,8 +22,8 @@ function addList(written){
     const listBtn = document.createElement("button");
     list.appendChild(content);
     list.appendChild(listBtn);
-    content.innerText = written.text;
-    listBtn.innerText = "X";
+    content.innerText = "- "+written.text;
+    listBtn.setAttribute("class", "fas fa-meteor fa-lg");
     listBtn.onclick = deleteList;
     lists.appendChild(list);
 
