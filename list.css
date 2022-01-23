@@ -31,6 +31,7 @@ input:focus {
 #write input::placeholder {
   color: rgba(255, 255, 255, 0.555);
   font-size: 17px;
+  font-family: "Mochiy Pop P One", sans-serif;
 }
 li {
   display: flex;
@@ -39,6 +40,7 @@ li {
 }
 li span {
   margin-top: 3px;
+  font-family: "Mochiy Pop P One", sans-serif;
 }
 li button {
   background-color: rgba(0, 0, 0, 0);

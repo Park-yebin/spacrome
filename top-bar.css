@@ -16,6 +16,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-family: "Mochiy Pop P One", sans-serif;
 }
 .geo-zone span:first-child {
   padding-right: 12px;
