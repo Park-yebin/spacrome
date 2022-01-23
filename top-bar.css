@@ -1,0 +1,25 @@
+.top-bar {
+  position: fixed;
+  top: 0;
+  width: 98%;
+  padding: 0px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+#announce {
+  margin: 20px 0px;
+}
+.fa-rocket {
+  margin-left: 5px;
+}
+.geo-zone {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.geo-zone span:first-child {
+  padding-right: 12px;
+}
+.geo-zone span:last-child {
+  padding-left: 12px;
+}

@@ -6,32 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4f0109abfa.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="welcome-zone">
-        <form class="hidden" id="login">
-            <input required maxlength="12" minlength="1" type="text" placeholder="Would you tell your name?">
-            <button>V</button>
-        </form>
-        <div class="hidden" id="announce"></div>
+    <div class="top">
+        <div class="welcome-zone">
+            <div class="hidden" id="announce"></div>
+            <div class="first">
+                <h1 class="hidden">Welcome Stranger!</h1>
+                <div class="first-inner">
+                    <div class="hidden login-emoji"><i class="fas fa-user-astronaut fa-2x"></i></div>
+                    <form class="hidden" id="login">
+                        <input required maxlength="12" minlength="1" type="text" placeholder="REVEAL YOURSELF!!">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="hidden geo-zone">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </div>
-    <div class="time-zone">
-        <h1 id="clock"></h1>
-        <div id="date"></div>
-    </div>
-    <div class="quote-zone">
-        <div id="words"></div>
-        <div id="person"></div>
-    </div>
-    <div class="list-zone">
-        <form id="write">
-            <input type="text">
-        </form>
-        <ul id="lists"></ul>
-    </div>
-    <div class="geo-zone">
-        <span></span>
-        <span></span>
+    <div class="hidden main">
+        <div class="time-zone">
+            <h1 id="clock"></h1>
+            <div id="date"></div>
+        </div>
+        <div class="quote-zone">
+            <i><div id="words"></div></i>
+            <i><div id="person"></div></i>
+        </div>
+        <div class="list-zone">
+            <div>
+                <form id="write">
+                    <input type="text" minlength="1" placeholder="What's your plan STRANGER?!">
+                </form>
+                <ul id="lists"></ul>
+            </div>
+        </div>
     </div>
     <script src="js/welcome.js"></script>
     <script src="js/clock.js"></script>

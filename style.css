@@ -1,3 +1,40 @@
+@import "reset.css";
+@import "top-bar.css";
+@import "login.css";
+@import "list.css";
 .hidden {
   display: none;
+}
+body {
+  color: white;
+  height: 50vh;
+}
+img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+}
+.time-zone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 17%;
+}
+.time-zone h1 {
+  margin-bottom: 15px;
+}
+#date {
+  font-size: 18px;
+}
+.quote-zone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3%;
+}
+#words {
+  margin-bottom: 8px;
 }
